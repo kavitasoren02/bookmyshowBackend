@@ -16,6 +16,9 @@ app.use("/user", userRouter);
 app.use("/admin", adminRouter);
 app.use("/movie", movieRouter);
 app.use("/booking", bookingsRouter);
+app.get('/',async (req , res) =>{
+  res.send("application running")
+})
 
 mongoose
   .connect(
